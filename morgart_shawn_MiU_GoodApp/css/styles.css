@@ -4,7 +4,9 @@ title: additem.html Styles
 author: Shawn R. Morgart
 for: Visual Frameworks 1110: Project 2
 */
-
+ui-li-icon {
+    position: 0px 50%;
+}
 
 div {
     background-image: url(images/blue-scratched-texture.jpg);  
@@ -12,7 +14,7 @@ div {
 }
 
 #newclbutton {
-    background: url(images/blue-scratched-texture.jpg)
+    background-image: url(images/blue-scratched-texture.jpg)
 }
 /*
 form {
