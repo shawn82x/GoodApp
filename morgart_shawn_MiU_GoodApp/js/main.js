@@ -3,6 +3,18 @@
 // Author: Shawn R. Morgart
 
 //Wait until the DOM is ready.
+/*
+$(document).ready(function(){
+    var newcl = $('#newclform');
+    newcl.validate({
+        invalidHandler: function(form, validator){
+            };
+        submitHandler: function(){
+            };
+    });
+   
+});
+*/
 window.addEventListener("DOMContentLoaded", function(){
    
     //getElementById Function
