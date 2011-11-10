@@ -55,7 +55,7 @@
             <img src="images/key_visual1.jpg" >        
 	    <H1>Add New Client</H1>
 	</div>
-        <form action="" method="post" id="newclform">
+        <form action="" method="post" id="newclientform">
 	    <div data-role="fieldcontain" name="select" id="select">
 		<label for="acctype">Type of Account:</label>
 		<select name="acctype" data-theme="b" data-native-menu="false">
@@ -72,15 +72,14 @@
 	    <div data-role="collapsible-set">
 	    
 
-		<div data-role="collapsible" data-theme="b" data-collapsed="true"><h3>General Data</h3>
+		<div data-role="collapsible" data-theme="b" data-collapsed="false"><h3>General Data</h3>
                     <div data-role="fieldcontain">
                         <label for="fname" >First Name:</label>
-                        <input data-theme="a" type="text" name="fname" id="fname" value="" placeholder="John" class="required"/>
-                    </div>
-                        
-                    <div data-role="fieldcontain">
-                        <label for="lname">Last Name:</label>
-                        <input data-theme="a" type="text" name="lname" id="lname" value="" placeholder="Doe" class="required"/>
+			    <input data-theme="a" type="text" name="fname" id="fname" value="" placeholder="Jon" class="required"/>
+		    </div>
+		    <div data-role="fieldcontain">
+			<label for="lname">Last Name</label>
+			    <input data-theme="a" type="text" name="lname" id="lname" value="" placeholder="Doe" class="required"/>
                     </div>
                     
                     <div data-role="fieldcontain">
@@ -96,58 +95,58 @@
                     <div data-role="fieldcontain" name="select" id="select">
 			<label for="states">Choose State:</label>
 			<select name="state_picked" data-theme="a" data-native-menu="false">
-			    <option value="">None
-			    <option value="AL">Alabama
-			    <option value="AK">Alaska
-			    <option value="AZ">Arizona
-			    <option value="AR">Arkansas
-			    <option value="CA">California
-			    <option value="CO">Colorado
-			    <option value="CT">Connecticut
-			    <option value="DE">Delaware
-			    <option value="FL">Florida
-			    <option value="GA">Georgia
-			    <option value="HI">Hawaii
-			    <option value="ID">Idaho
-			    <option value="IL">Illinois
-			    <option value="IN">Indiana
-			    <option value="IA">Iowa
-			    <option value="KS">Kansas
-			    <option value="KY">Kentucky
-			    <option value="LA">Louisiana
-			    <option value="ME">Maine
-			    <option value="MD">Maryland
-			    <option value="MA">Massachusetts
-			    <option value="MI">Michigan
-			    <option value="MN">Minnesota
-			    <option value="MS">Mississippi
-			    <option value="MO">Missouri
-			    <option value="MT">Montana
-			    <option value="NE">Nebraska
-			    <option value="NV">Nevada
-			    <option value="NH">New Hampshire
-			    <option value="NJ">New Jersey
-			    <option value="NM">New Mexico
-			    <option value="NY">New York
-			    <option value="NC">North Carolina
-			    <option value="ND">North Dakota
-			    <option value="OH" selected="true">Ohio
-			    <option value="OK">Oklahoma
-			    <option value="OR">Oregon
-			    <option value="PA">Pennsylvania
-			    <option value="RI">Rhode Island
-			    <option value="SC">South Carolina
-			    <option value="SD">South Dakota
-			    <option value="TN">Tennessee
-			    <option value="TX">Texas
-			    <option value="UT">Utah
-			    <option value="VT">Vermont
-			    <option value="VA">Virginia
-			    <option value="WA">Washington
-			    <option value="DC">Washington D.C.
-			    <option value="WV">West Virginia
-			    <option value="WI">Wisconsin
-			    <option value="WY">Wyoming
+			    <option value="">None</option>
+			    <option value="AL">Alabama</option>
+			    <option value="AK">Alaska</option>
+			    <option value="AZ">Arizona</option>
+			    <option value="AR">Arkansas</option>
+			    <option value="CA">California</option>
+			    <option value="CO">Colorado</option>
+			    <option value="CT">Connecticut</option>
+			    <option value="DE">Delaware</option>
+			    <option value="FL">Florida</option>
+			    <option value="GA">Georgia</option>
+			    <option value="HI">Hawaii</option>
+			    <option value="ID">Idaho</option>
+			    <option value="IL">Illinois</option>
+			    <option value="IN">Indiana</option>
+			    <option value="IA">Iowa</option>
+			    <option value="KS">Kansas</option>
+			    <option value="KY">Kentucky</option>
+			    <option value="LA">Louisiana</option>
+			    <option value="ME">Maine</option>
+			    <option value="MD">Maryland</option>
+			    <option value="MA">Massachusetts</option>
+			    <option value="MI">Michigan</option>
+			    <option value="MN">Minnesota</option>
+			    <option value="MS">Mississippi</option>
+			    <option value="MO">Missouri</option>
+			    <option value="MT">Montana</option>
+			    <option value="NE">Nebraska</option>
+			    <option value="NV">Nevada</option>
+			    <option value="NH">New Hampshire</option>
+			    <option value="NJ">New Jersey</option>
+			    <option value="NM">New Mexico</option>
+			    <option value="NY">New York</option>
+			    <option value="NC">North Carolina</option>
+			    <option value="ND">North Dakota</option>
+			    <option value="OH" selected="true">Ohio</option>
+			    <option value="OK">Oklahoma</option>
+			    <option value="OR">Oregon</option>
+			    <option value="PA">Pennsylvania</option>
+			    <option value="RI">Rhode Island</option>
+			    <option value="SC">South Carolina</option>
+			    <option value="SD">South Dakota</option>
+			    <option value="TN">Tennessee</option>
+			    <option value="TX">Texas</option>
+			    <option value="UT">Utah</option>
+			    <option value="VT">Vermont</option>
+			    <option value="VA">Virginia</option>
+			    <option value="WA">Washington</option>
+			    <option value="DC">Washington D.C.</option>
+			    <option value="WV">West Virginia</option>
+			    <option value="WI">Wisconsin</option>
+			    <option value="WY">Wyoming</option>
 			</select>
                     </div>
                     
@@ -163,7 +162,7 @@
                     
                     <div data-role="fieldcontain">
                         <label for="email">Email:</label>
-                        <input data-theme="a" type="email" name="email" id="email" value="" placeholder="john@email.com" class="required email"/>
+                        <input data-theme="a" type="email" name="email" id="email" value="" placeholder="email@address.com" class="required email"/>
                     </div>
 		</div>
 
@@ -171,11 +170,11 @@
 		    <h3>Representational Style</h3>
 		    <fieldset data-role="controlgroup">
 			<legend>Ask a Thought-Provoking Question...</legend>
-			    <input type="radio" name="repStyle" id="auditory" value="auditory" checked="checked" />
+			    <input type="radio" name="repStyle" id="auditory" value="auditory" />
 				<label for="auditory">Auditory: looks side to side. Talk = Medium.</label>
 			    <input type="radio" name="repStyle" id="kines" value="kines"  />
 				<label for="kines">Kinesthetic: looks down/right. Talk = Slow. "Feeling" words.</label>
-			    <input type="radio" name="repStyle" id="visual" value="visual"  />
+			    <input type="radio" name="repStyle" id="visual" value="visual" checked="checked" />
 				<label for="visual">Visual: looks defocused or up. Talk = Fast.</label>
 		    </fieldset>
 		</div>
@@ -201,14 +200,14 @@
 		    <h3>Channels</h3>
 		    <fieldset data-role="controlgroup">
 			<legend>How one best learns.</legend>
-			    <input type="radio" name="channel" id="see" value="see" checked="checked" />
-				<label for="see">See: Must see examples.</label>
+			    <input type="radio" name="channel" id="do" value="do" checked="checked" />
+				<label for="do">Do: Must do it or use it to be convinced.</label>
 			    <input type="radio" name="channel" id="hear" value="hear"  />
 				<label for="hear">Hear: Must hear how or hear about.</label>
 			    <input type="radio" name="channel" id="read" value="read"  />
 				<label for="read">Read: Must read information themselves.</label>
-			    <input type="radio" name="channel" id="do" value="do"  />
-				<label for="do">Do: Must do it or use it to be convinced.</label>
+			    <input type="radio" name="channel" id="see" value="see"  />
+				<label for="see">See: Must see examples.</label>
 		    </fieldset>
 		</div>
                   
@@ -248,7 +247,7 @@
 		    <h3>Social Style</h3>
 		    <fieldset data-role="controlgroup">
 			<legend>(Choose the Strongest One)</legend>
-			<input type="radio" name="channel" id="driver" value="driver" />
+			<input type="radio" name="channel" id="driver" value="driver" checked="checked"/>
 			    <label for="driver">Driver: work-focused / extroverted.</label>
 			<input type="radio" name="channel" id="expressive" value="expressive"  />
 			    <label for="expressive">Expressive: people-focused / extroverted.</label>
@@ -278,21 +277,22 @@
 		    <textarea cols="40" rows="8" name="textarea" id="textarea" data-theme="a" placeholder="house type, special/current equipment, etc..."></textarea>
 		</div>
 
-	</form>
-	<div data-role="fieldcontain">
-	    <div class="ui-grid-a">
-		<div class="ui-block-a"><a href="Good_index.html" data-role="button" data-theme="e" id="savecl">Save Client</a></div>
-		<div class="ui-block-b"></div>
-	    </div>
-	</div>
-	<div data-role="fieldcontain">
-	    <div class="ui-grid-a">
-		<div class="ui-block-a"><a href="Good_index.html" data-role="none" id="clear">Clear Form</a></div>
-		<div class="ui-block-b"></div>
-	    </div>
-	</div>
 	
-	<a href="#newclerrors" id="newclerrorslink" data-rel="dialog" data-transition="pop">Open Errors</a>
+	    <div data-role="fieldcontain">
+		<div class="ui-grid-a">
+		    <div class="ui-block-a"><input type="submit" value="Save Client" data-theme="e" id="savecl"/></div>
+		    <div class="ui-block-b"></div>
+		</div>
+	    </div>
+	    <div data-role="fieldcontain">
+		<div class="ui-grid-a">
+		    <div class="ui-block-a"><input type="submit" value="Clear Form" id="clearcl" /></div>
+		    <div class="ui-block-b"></div>
+		</div>
+	    </div>
+	    
+	    <a href="#newclienterrors" id="clerrorslink" data-rel="dialog" data-transition="pop" >open errors</a>
+	</form>
 	
 	<div data-role="footer" >
             <h3>MiU 1111 : Project 3</h3>        
@@ -482,9 +482,9 @@
     
     </div>
     
-    <div data-role="dialog" id="newclerrors">
+    <div data-role="dialog" id="newclienterrors">
 	<div data-role="header" data-position="fixed">
-	    <h1>Missing Fields</h1>
+	    <h3>Missing Fields</h3>
 	</div>
 	<div data-role="content">
 	    <ul>
@@ -498,7 +498,7 @@
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.js"></script>
     <script type="text/javascript" src="js/libs/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="js/libs/additional-methods.min.js"></script>
+<!--    <script type="text/javascript" src="js/libs/additional-methods.min.js"></script>	-->
     <script type="text/javascript" src="js/main.js" ></script>
 </body>
 </html>

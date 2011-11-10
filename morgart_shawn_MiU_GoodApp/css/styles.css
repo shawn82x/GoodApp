@@ -4,7 +4,7 @@ title: additem.html Styles
 author: Shawn R. Morgart
 for: Visual Frameworks 1110: Project 2
 */
-#newclerrorslink{display: none;}
+#clerrorslink{display: none;}
 
 a.#savecl {
     font-size: small;

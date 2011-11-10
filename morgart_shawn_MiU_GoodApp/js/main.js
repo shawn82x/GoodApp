@@ -4,33 +4,39 @@
 
 //Wait until the DOM is ready.
 
-var parseClientForm = function(data){
-    console.log(data)
+var parseClientform = function(data){
+        console.log
+    
 };
 
+
+
 $(document).ready(function(){
-    var newclinput = $('#newclform'),
-        newclerrorslink = $('#newclerrorslink')
+    var clform = $('#newclientform'),
+        clerrorslink = $('#clerrorslink')
     ;
-    
-    newclinput.validate({
+    clform.validate({
         invalidHandler: function(form, validator){
-            newclerrorslink.click();
+            clerrorslink.click();
             var html = '';
-            for (var key in validator.submitted){
+            for(var key in validator.submitted){
                 var label = $('label[for^="'+ key +'"]').not('[generated]');
                 var legend = label.closest('fieldset').find('.ui-controlgroup-label');
                 var fieldName = legend.length ? legend.text() : label.text();
-                html += '<li>'+ fieldname +'</li>';
+                html += '<li>'+ fieldName +'</li>';
             };
-            $("#newclerrors ul").html(html);
+            $("#newclienterrors ul").html(html);
         },
         submitHandler: function(){
-            var data = newclinput.serializeArray();
-            parseClientForm(data);
+            var data = clform.serializeArray();
+            parseClientform(data);
         }
-    });
-   
+        
+        
+        });
+    
+    
+    
 });
 
 
