@@ -4,9 +4,20 @@ title: additem.html Styles
 author: Shawn R. Morgart
 for: Visual Frameworks 1110: Project 2
 */
-label.error {display: block; margin: 10px 0; color: cc0000;}
+#newclerrorslink{display: none;}
 
-#mainlist .ui-li-icon {
+a.#savecl {
+    font-size: small;
+}
+
+a.#clearfields {
+    font-size: small;
+    margin: 20px 0px 0px 0px;
+}
+
+label.error {display: block; margin: 10px 0; color: #cc0000;}
+
+#mainlist.ui-li-icon {
     background-size: 1px 1px;
 }
 

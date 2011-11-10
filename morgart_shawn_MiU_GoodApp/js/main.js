@@ -3,18 +3,39 @@
 // Author: Shawn R. Morgart
 
 //Wait until the DOM is ready.
-/*
+
+var parseClientForm = function(data){
+    console.log(data)
+};
+
 $(document).ready(function(){
-    var newcl = $('#newclform');
-    newcl.validate({
+    var newclinput = $('#newclform'),
+        newclerrorslink = $('#newclerrorslink')
+    ;
+    
+    newclinput.validate({
         invalidHandler: function(form, validator){
+            newclerrorslink.click();
+            var html = '';
+            for (var key in validator.submitted){
+                var label = $('label[for^="'+ key +'"]').not('[generated]');
+                var legend = label.closest('fieldset').find('.ui-controlgroup-label');
+                var fieldName = legend.length ? legend.text() : label.text();
+                html += '<li>'+ fieldname +'</li>';
             };
+            $("#newclerrors ul").html(html);
+        },
         submitHandler: function(){
-            };
+            var data = newclinput.serializeArray();
+            parseClientForm(data);
+        }
     });
    
 });
-*/
+
+
+/*
+
 window.addEventListener("DOMContentLoaded", function(){
    
     //getElementById Function
@@ -24,6 +45,11 @@ window.addEventListener("DOMContentLoaded", function(){
     }
     
    
+    $(function(){
+        $('select:not([multiple="multiple"])').selectmenu();
+    });
+    
+    
     //Create select field element and populate with options
     function chooseGroup() {
         var formTag = document.getElementsByTagName("form"),
@@ -39,6 +65,7 @@ window.addEventListener("DOMContentLoaded", function(){
         }
         selectLi.appendChild(makeSelect);
     }
+    
     
     //Find value of selected radio button.
     function getRadioRepstyle(){
@@ -512,8 +539,9 @@ window.addEventListener("DOMContentLoaded", function(){
     
     
     //Variable defaults
-    var taskGroup = ["-Choose Account Type-", "Residential", "Commercial", "Medical", "Fire", "Takeover", "Upgrade", ];
+//    var taskGroup = ["-Choose (required)-", "Residential", "Commercial", "Medical", "Fire", "Takeover", "Upgrade", ];
      //   taskType;
+//     var stateGroup = ["Indiana", "Michigan", "Ohio",];
     var lineBreak = "----------------------------------------";
     chooseGroup();
     errMsg = $('errors');
@@ -829,7 +857,8 @@ window.addEventListener("DOMContentLoaded", function(){
 
     }
     
-*/
+
 
 });
        
+*/
