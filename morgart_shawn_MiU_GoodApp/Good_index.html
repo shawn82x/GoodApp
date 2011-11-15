@@ -12,55 +12,55 @@
     <meta name="viewport" content="target-densitydpi=device-dpi" />
     <meta http-equiv="cleartype" content="on">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0rc2/jquery.mobile-1.0rc2.min.css" />
+    <link rel="stylesheet" href="themes/shawn_custom_themes1.min.css">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
     <script src="js/libs/modernizr.custom.min.js"></script>
-    <title>Shawn R. Morgart</title>
+    <title>Shawn R. Morgart:MiU 1111:P4</title>
 </head>
 
 <body>
 
-    <div data-role="page" id="home">
-        <div data-role="header" >
-            <label for="search-basic" class="ui-hidden-accessible">Search for Client</label>
+    <div data-role="page" id="home" data-theme="a">
+        <div data-role="header" data-theme="a">
+            <label for="search-basic" class="ui-hidden-accessible" data-theme="c">Search for Client</label>
             <input type="search" name="search" id="search-basic" value="" data-theme="c" placeholder="Search for Client"/>
-            <img src="images/key_visual1.jpg" >        
+	    <img src="images/key_visual1.jpg" >
         </div>
         
         <div data-role="content" id="newclbutton">
-            <p><a href="#newclPage" data-role="button" data-theme="e" background="url(images/blue-scratched-texture.jpg)">Add New Client Profile!</a></p>
+            <p><a href="#newclPage" data-role="button" data-theme="a" >Add New Client Profile!</a></p>
         </div>
-	
-	<div data-role="content" id="browselist">
-	    <ul data-role="listview" data-inset="true" data-theme="b" data-count-theme="a" id="mainlist">
-		<li data-role="divider" data-inset="true" data-theme="a" />Browse Saved Clients</li>
-		<li data-icon="home"><a href="#residPage">Residential</a></li>
-		<li data-icon="grid"><a href="#commPage">Commercial</a></li>          
-		<li data-icon="star"><a href="#firePage">All Clients: (by date)</a></li>
-		<li data-icon="plus"><a href="#mediPage">Medical Alert</a></li>
-		<li data-icon="gear"><a href="#potePage">Takeovers</a></li>
-		<li data-role="divider" data-inset="true" data-theme="a" />Github Links</li>
-		<li data-icon="alert"><a href='http://shawn82x.github.com/AlternateApp/morgart_shawn_MiU_AlternateApp/Alt_index.html' id="badapp">Link To Alternate "Bad" App</a></li>
-		<li data-icon="info"><a href='https://github.com/shawn82x/GoodApp' id="gh-master">Link to Master Code</a></li>
-	    </ul>
-	</div>
+
+        <ul data-role="listview" data-inset="true" data-theme="a" data-count-theme="a" id="mainlist">
+            <li data-role="divider" data-inset="true" data-theme="b">Browse Saved Clients</li>
+            <li data-icon="home"><a href="#residPage">Residential</a></li>
+            <li data-icon="grid"><a href="#commPage">Commercial</a></li>          
+	    <li data-icon="star"><a href="#firePage">All Clients: (by date)</a></li>
+            <li data-icon="plus"><a href="#mediPage">Medical Alert</a></li>
+            <li data-icon="gear"><a href="#potePage">Takeovers</a></li>
+	    <li data-role="divider" data-inset="true" data-theme="b" />Github Links</li>
+	    <li data-icon="alert"><a href='http://shawn82x.github.com/AlternateApp/morgart_shawn_MiU_AlternateApp/Alt_index.html' id="badapp">Link To Alternate "Bad" App</a></li>
+	    <li data-icon="info"><a href='https://github.com/shawn82x/GoodApp' id="gh-master">Link to Master Code</a></li>
+        </ul>
 
         <div data-role="footer" >
-            <h3>MiU 1111 : Project 3</h3>        
+	    <h3>Successful Behavior Institute</h3>
+	    <h3>Sales College of Northwest Ohio</h3>
         </div>
         
     </div>
     
     
 <!-- Add New Client Page  -->    
-    <div data-role="page" id="newclPage" data-add-back-btn="true">
+    <div data-role="page" id="newclPage" data-add-back-btn="true" data-theme="a">
         <div data-role="header">
             <img src="images/key_visual1.jpg" >        
 	    <H1>Add New Client</H1>
 	</div>
-        <form action="" method="post" id="newclientform">
-	    <div data-role="fieldcontain" name="select" id="select">
+        <form action="" method="post" id="newclientform" data-theme="a">
+	    <div data-role="fieldcontain" name="select" id="select" data-theme="a">
 		<label for="acctype">Type of Account:</label>
-		<select name="acctype" data-theme="b" data-native-menu="false">
+		<select name="acctype" data-theme="a" data-native-menu="false">
 		    <option value="chooser" selected="true">Choose (required)
 		    <option value="resi">Residential
 		    <option value="comm">Commercial
@@ -72,25 +72,26 @@
 	    </div>
 	    
 	    <div data-role="collapsible-set">
-		<div data-role="collapsible" data-theme="b" data-collapsed="false"><h3>General Data</h3>
+	    
+
+		<div data-role="collapsible" data-theme="a" data-collapsed="false"><h3>General Data</h3>
                     <div data-role="fieldcontain">
                         <label for="fname" >First Name:</label>
-			<input data-theme="a" type="text" name="fname" id="fname" value="" placeholder="Jon" class="required"/>
+			    <input data-theme="c" type="text" name="fname" id="fname" value="" placeholder="Jon" class="required"/>
 		    </div>
-		    
 		    <div data-role="fieldcontain">
 			<label for="lname">Last Name</label>
-			<input data-theme="a" type="text" name="lname" id="lname" value="" placeholder="Doe" class="required"/>
+			    <input data-theme="c" type="text" name="lname" id="lname" value="" placeholder="Doe" class="required"/>
                     </div>
                     
                     <div data-role="fieldcontain">
                         <label for="street">Street Address:</label>
-                        <input data-theme="a" type="text" name="street" id="street" value="" placeholder="123 Main St." class="required"/>
+                        <input data-theme="c" type="text" name="street" id="street" value="" placeholder="123 Main St." class="required"/>
                     </div>
                     
                     <div data-role="fieldcontain">
                         <label for="city">City:</label>
-                        <input data-theme="a" type="text" name="city" id="city" value="" placeholder="Findlay" class="required"/>
+                        <input data-theme="c" type="text" name="city" id="city" value="" placeholder="Findlay" class="required"/>
                     </div>
                     
                     <div data-role="fieldcontain" name="select" id="select">
@@ -153,21 +154,21 @@
                     
                     <div data-role="fieldcontain">
                         <label for="zip">Zip:</label>
-                        <input data-theme="a" type="number" name="zip" id="zip" value="" placeholder="45840" class="required number"/>
+                        <input data-theme="c" type="number" name="zip" id="zip" value="" placeholder="45840" class="required number"/>
                     </div>
                     
                     <div data-role="fieldcontain">
                         <label for="phone">Phone:</label>
-                        <input data-theme="a" type="tel" name="phone" id="phone" value="" placeholder="###-###-####" class="required phone"/>
+                        <input data-theme="c" type="tel" name="phone" id="phone" value="" placeholder="###-###-####" class="required phone"/>
                     </div>
                     
                     <div data-role="fieldcontain">
                         <label for="email">Email:</label>
-                        <input data-theme="a" type="email" name="email" id="email" value="" placeholder="email@address.com" class="required email"/>
+                        <input data-theme="c" type="email" name="email" id="email" value="" placeholder="email@address.com" class="required email"/>
                     </div>
 		</div>
 
-		<div data-role="collapsible" data-theme="a" >
+		<div data-role="collapsible" data-theme="b" >
 		    <h3>Representational Style</h3>
 		    <fieldset data-role="controlgroup">
 			<legend>Ask a Thought-Provoking Question...</legend>
@@ -180,24 +181,24 @@
 		    </fieldset>
 		</div>
 	    
-		<div data-role="collapsible" data-theme="b" >
+		<div data-role="collapsible" data-theme="a" >
 		    <h3>Meta-Programs</h3>
 		    <h4>(Rank -10 to 10)</h4>
 		    <label for="direction">Direction: toward vs. away:</label>
-			<input type="range" data-theme="b" name="direction" id="direction" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="a" name="direction" id="direction" value="0" min="-10" max="10"  />
 		    <label for="source">Source: internal vs. external:</label>
-			<input type="range" data-theme="b" name="source" id="source" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="a" name="source" id="source" value="0" min="-10" max="10"  />
 		    <label for="reason">Reason: options vs. procedures:</label>
-			<input type="range" data-theme="b" name="reason" id="reason" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="a" name="reason" id="reason" value="0" min="-10" max="10"  />
 		    <label for="level">Level: proactive vs. reactive:</label>
-			<input type="range" data-theme="b" name="level" id="level" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="a" name="level" id="level" value="0" min="-10" max="10"  />
 		    <label for="scope">Scope: big-picture vs. details:</label>
-			<input type="range" data-theme="b" name="scope" id="scope" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="a" name="scope" id="scope" value="0" min="-10" max="10"  />
 		    <label for="change">Change: sameness vs. difference:</label>
-			<input type="range" data-theme="b" name="change" id="change" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="a" name="change" id="change" value="0" min="-10" max="10"  />
 		</div>
 	    
-		<div data-role="collapsible" data-theme="a" >
+		<div data-role="collapsible" data-theme="b" >
 		    <h3>Channels</h3>
 		    <fieldset data-role="controlgroup">
 			<legend>How one best learns.</legend>
@@ -212,7 +213,7 @@
 		    </fieldset>
 		</div>
                   
-		<div data-role="collapsible" data-theme="b" >    
+		<div data-role="collapsible" data-theme="a" >    
 		    <h3>Convincers</h3>
 		    <fieldset data-role="controlgroup">
 			<legend>How one most easily convinces oneself.</legend>
@@ -227,24 +228,24 @@
 		    </fieldset>
 		</div>
         
-		<div data-role="collapsible" data-theme="a" >
+		<div data-role="collapsible" data-theme="b" >
 		    <h3>Values</h3>
 		    <h4>(Rank 0 to 100)</h4>
 			<label for="theor">Theoretical: knowledge, problem solver.</label>
-			    <input type="range" data-theme="b" name="theor" id="theor" value="20" min="0" max="100"  />
+			    <input type="range" data-theme="a" name="theor" id="theor" value="20" min="0" max="100"  />
 			<label for="util">Utilitarian: practicality, money.</label>
-			    <input type="range" data-theme="b" name="util" id="util" value="20" min="0" max="100"  />
+			    <input type="range" data-theme="a" name="util" id="util" value="20" min="0" max="100"  />
 			<label for="aesth">Aesthetic: creativity, enjoyment.</label>
-			    <input type="range" data-theme="b" name="aesth" id="aesth" value="20" min="0" max="100"  />
+			    <input type="range" data-theme="a" name="aesth" id="aesth" value="20" min="0" max="100"  />
 			<label for="soci">Social: selflessness, generosity.</label>
-			    <input type="range" data-theme="b" name="soci" id="soci" value="20" min="0" max="100"  />
+			    <input type="range" data-theme="a" name="soci" id="soci" value="20" min="0" max="100"  />
 			<label for="indiv">Individualistic: leading, achieving.</label>
-			    <input type="range" data-theme="b" name="indiv" id="indiv" value="20" min="0" max="100"  />
+			    <input type="range" data-theme="a" name="indiv" id="indiv" value="20" min="0" max="100"  />
 			<label for="trad">Traditional: by the "book".</label>
-			    <input type="range" data-theme="b" name="trad" id="trad" value="20" min="0" max="100"  />                    
+			    <input type="range" data-theme="a" name="trad" id="trad" value="20" min="0" max="100"  />                    
 		</div>
         
-		<div data-role="collapsible" data-theme="b" >
+		<div data-role="collapsible" data-theme="a" >
 		    <h3>Social Style</h3>
 		    <fieldset data-role="controlgroup">
 			<legend>(Choose the Strongest One)</legend>
@@ -259,20 +260,20 @@
 		    </fieldset>
 		</div>
                 
-		<div data-role="collapsible" data-theme="a" >
+		<div data-role="collapsible" data-theme="b" >
 		    <h3>DISC Assessment</h3>
 		    <h4>(Rank -10 to 10)</h4>
 			<label for="dom">Dominance: calculating vs. agressive.</label>
-			    <input type="range" data-theme="b" name="dom" id="dom" value="0" min="-10" max="10"  />
+			    <input type="range" data-theme="a" name="dom" id="dom" value="0" min="-10" max="10"  />
 			<label for="inf">Influencing: reserved vs. outgoing.</label>
-			    <input type="range" data-theme="b" name="inf" id="inf" value="0" min="-10" max="10"  />
+			    <input type="range" data-theme="a" name="inf" id="inf" value="0" min="-10" max="10"  />
 			<label for="stead">Steadiness: unstructured vs. structured.</label>
-			    <input type="range" data-theme="b" name="stead" id="stead" value="0" min="-10" max="10"  />
+			    <input type="range" data-theme="a" name="stead" id="stead" value="0" min="-10" max="10"  />
 			<label for="comp">Compliance: makes own rules vs. follows The rules.</label>
-			    <input type="range" data-theme="b" name="comp" id="comp" value="0" min="-10" max="10"  />
+			    <input type="range" data-theme="a" name="comp" id="comp" value="0" min="-10" max="10"  />
 		</div>
 		
-		<div data-role="collapsible" data-theme="b">
+		<div data-role="collapsible" data-theme="a">
 		    <h3>Notes</h3>
 		    <label for="textarea"></label>
 		    <textarea cols="40" rows="8" name="textarea" id="textarea" data-theme="a" placeholder="house type, special/current equipment, etc..."></textarea>
@@ -281,13 +282,13 @@
 	
 	    <div data-role="fieldcontain">
 		<div class="ui-grid-a">
-		    <div class="ui-block-a"><input type="submit" value="Save Client" data-theme="e" id="savecl"/></div>
+		    <div class="ui-block-a"><input type="submit" value="Save Client" data-theme="a" id="savecl"/></div>
 		    <div class="ui-block-b"></div>
 		</div>
 	    </div>
 	    <div data-role="fieldcontain">
 		<div class="ui-grid-a">
-		    <div class="ui-block-a"><input type="submit" value="Clear Form" id="clearcl" /></div>
+		    <div class="ui-block-a"><input type="reset" value="Clear Form" id="clearcl" data-theme="c" /></div>
 		    <div class="ui-block-b"></div>
 		</div>
 	    </div>
@@ -296,7 +297,8 @@
 	</form>
 	
 	<div data-role="footer" >
-            <h3>MiU 1111 : Project 3</h3>        
+            <h3>Successful Behavior Institute</h3>
+	    <h3>Sales College of Northwest Ohio</h3>        
         </div>
     
     </div>
@@ -306,9 +308,9 @@
         <div data-role="header" data-position="fixed">
 	    <H1>Residential:</H1>
 	</div>
-	<div data-role="listview" data-inset="true" data-theme="b" data-count-theme="a" id="resid">
+	<div data-role="listview" data-inset="true" data-theme="a" data-count-theme="a" id="resid">
 	
-	    <div data-role="collapsible" data-theme="b" data-collapsed="true">
+	    <div data-role="collapsible" data-theme="a" data-collapsed="true">
 	        <h3>John Doe</h3>
 	        <h5>11-10-11</h5>
 		<div data-role="fieldcontain">
@@ -323,7 +325,7 @@
 		    <p>email: john@doe.com</p>
 		</div>    
 	    </div>
-	    <div data-role="collapsible" data-theme="b" data-collapsed="true">
+	    <div data-role="collapsible" data-theme="d" data-collapsed="true">
 		<h3>Jane Doe</h3>
 		<h5>11-08-11</h5>
 		<div data-role="fieldcontain">
@@ -338,7 +340,7 @@
 		    <p>email: john@doe.com	</p>
 		</div>    
 	    </div>
-	    <div data-role="collapsible" data-theme="b" data-collapsed="true">
+	    <div data-role="collapsible" data-theme="a" data-collapsed="true">
 		<h3>Dan Doe</h3>
 		<h5>11-07-11</h5>
 		<div data-role="fieldcontain">
@@ -353,7 +355,7 @@
 		    <p>email: john@doe.com	</p>
 		</div>    
 	    </div>
-	    <div data-role="collapsible" data-theme="b" data-collapsed="true">
+	    <div data-role="collapsible" data-theme="d" data-collapsed="true">
 		<h3>William Doe</h3>
 		<h5>11-05-11</h5>
 		<div data-role="fieldcontain">
@@ -368,7 +370,7 @@
 		    <p>email: john@doe.com	</p>
 		</div>    
 	    </div>
-	    <div data-role="collapsible" data-theme="b" data-collapsed="true">
+	    <div data-role="collapsible" data-theme="a" data-collapsed="true">
 		<h3>Mary Doe</h3>
 		<h5>11-05-11</h5>
 		<div data-role="fieldcontain">
