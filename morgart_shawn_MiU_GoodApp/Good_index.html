@@ -20,18 +20,18 @@
 
 <body>
 
-    <div data-role="page" id="home" data-theme="a">
-        <div data-role="header" data-theme="a">
-            <label for="search-basic" class="ui-hidden-accessible" data-theme="c">Search for Client</label>
-            <input type="search" name="search" id="search-basic" value="" data-theme="c" placeholder="Search for Client"/>
+    <div data-role="page" id="home" data-theme="b">
+        <div data-role="header" data-theme="b">
+            <label for="search-basic" class="ui-hidden-accessible" data-theme="b">Search for Client</label>
+            <input type="search" name="search" id="search-basic" value="" data-theme="b" placeholder="Search for Client"/>
 	    <img src="images/key_visual1.jpg" >
         </div>
         
         <div data-role="content" id="newclbutton">
-            <p><a href="#newclPage" data-role="button" data-theme="a" >Add New Client Profile!</a></p>
+            <p><a href="#newclPage" data-role="button" data-theme="b" >Add New Client Profile!</a></p>
         </div>
 
-        <ul data-role="listview" data-inset="true" data-theme="a" data-count-theme="a" id="mainlist">
+        <ul data-role="listview" data-inset="true" data-theme="b" data-count-theme="a" id="mainlist">
             <li data-role="divider" data-inset="true" data-theme="b">Browse Saved Clients</li>
             <li data-icon="home"><a href="#residPage">Residential</a></li>
             <li data-icon="grid"><a href="#commPage">Commercial</a></li>          
@@ -57,10 +57,10 @@
             <img src="images/key_visual1.jpg" >        
 	    <H1>Add New Client</H1>
 	</div>
-        <form action="" method="post" id="newclientform" data-theme="a">
+        <form action="" method="post" id="newclientform" data-theme="b">
 	    <div data-role="fieldcontain" name="select" id="select" data-theme="a">
 		<label for="acctype">Type of Account:</label>
-		<select name="acctype" data-theme="a" data-native-menu="false">
+		<select name="acctype" data-theme="b" data-native-menu="false">
 		    <option value="chooser" selected="true">Choose (required)
 		    <option value="resi">Residential
 		    <option value="comm">Commercial
@@ -74,7 +74,7 @@
 	    <div data-role="collapsible-set">
 	    
 
-		<div data-role="collapsible" data-theme="a" data-collapsed="false"><h3>General Data</h3>
+		<div data-role="collapsible" data-theme="c" data-collapsed="false"><h3>General Data</h3>
                     <div data-role="fieldcontain">
                         <label for="fname" >First Name:</label>
 			    <input data-theme="c" type="text" name="fname" id="fname" value="" placeholder="Jon" class="required"/>
@@ -181,21 +181,21 @@
 		    </fieldset>
 		</div>
 	    
-		<div data-role="collapsible" data-theme="a" >
+		<div data-role="collapsible" data-theme="c" >
 		    <h3>Meta-Programs</h3>
 		    <h4>(Rank -10 to 10)</h4>
 		    <label for="direction">Direction: toward vs. away:</label>
-			<input type="range" data-theme="a" name="direction" id="direction" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="b" name="direction" id="direction" value="0" min="-10" max="10"  />
 		    <label for="source">Source: internal vs. external:</label>
-			<input type="range" data-theme="a" name="source" id="source" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="b" name="source" id="source" value="0" min="-10" max="10"  />
 		    <label for="reason">Reason: options vs. procedures:</label>
-			<input type="range" data-theme="a" name="reason" id="reason" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="b" name="reason" id="reason" value="0" min="-10" max="10"  />
 		    <label for="level">Level: proactive vs. reactive:</label>
-			<input type="range" data-theme="a" name="level" id="level" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="b" name="level" id="level" value="0" min="-10" max="10"  />
 		    <label for="scope">Scope: big-picture vs. details:</label>
-			<input type="range" data-theme="a" name="scope" id="scope" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="b" name="scope" id="scope" value="0" min="-10" max="10"  />
 		    <label for="change">Change: sameness vs. difference:</label>
-			<input type="range" data-theme="a" name="change" id="change" value="0" min="-10" max="10"  />
+			<input type="range" data-theme="b" name="change" id="change" value="0" min="-10" max="10"  />
 		</div>
 	    
 		<div data-role="collapsible" data-theme="b" >
@@ -213,9 +213,9 @@
 		    </fieldset>
 		</div>
                   
-		<div data-role="collapsible" data-theme="a" >    
+		<div data-role="collapsible" data-theme="c" >    
 		    <h3>Convincers</h3>
-		    <fieldset data-role="controlgroup">
+		    <fieldset data-role="controlgroup" data-theme="b">
 			<legend>How one most easily convinces oneself.</legend>
 			    <input type="radio" name="channel" id="overtime" value="overtime" checked="checked" />
 				<label for="overtime">Period of Time: data must remain Consistant.</label>
@@ -245,7 +245,7 @@
 			    <input type="range" data-theme="a" name="trad" id="trad" value="20" min="0" max="100"  />                    
 		</div>
         
-		<div data-role="collapsible" data-theme="a" >
+		<div data-role="collapsible" data-theme="c" >
 		    <h3>Social Style</h3>
 		    <fieldset data-role="controlgroup">
 			<legend>(Choose the Strongest One)</legend>
@@ -273,10 +273,10 @@
 			    <input type="range" data-theme="a" name="comp" id="comp" value="0" min="-10" max="10"  />
 		</div>
 		
-		<div data-role="collapsible" data-theme="a">
+		<div data-role="collapsible" data-theme="c">
 		    <h3>Notes</h3>
 		    <label for="textarea"></label>
-		    <textarea cols="40" rows="8" name="textarea" id="textarea" data-theme="a" placeholder="house type, special/current equipment, etc..."></textarea>
+		    <textarea cols="40" rows="8" name="textarea" id="textarea" data-theme="c" placeholder="house type, special/current equipment, etc..."></textarea>
 		</div>
 
 	
@@ -288,7 +288,7 @@
 	    </div>
 	    <div data-role="fieldcontain">
 		<div class="ui-grid-a">
-		    <div class="ui-block-a"><input type="reset" value="Clear Form" id="clearcl" data-theme="c" /></div>
+		    <div class="ui-block-a"><input type="reset" value="Clear Form" id="clearcl" data-theme="e" /></div>
 		    <div class="ui-block-b"></div>
 		</div>
 	    </div>
